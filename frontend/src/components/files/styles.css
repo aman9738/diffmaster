@@ -1,0 +1,154 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    /* margin: 2px;
+    margin: 1rem; */
+    height: var(--container-size);
+    /* border: 2px solid #d4d4d469; */
+    border-bottom: var(--border);
+    border-radius: var(--border-radius);
+}
+
+.files-container {
+    width: 20%;
+    overflow-y: scroll;
+    background-color: var(--bg);
+    border-right: var(--border);
+    height: 100%;
+}
+
+.textarea-view {
+    width: 80%;
+    background-color: var(--bg-accent);
+    padding: 5px 2px;
+    overflow-y: scroll;
+}
+
+.skeleton {
+    width: 100%;
+}
+
+.skeleton-item {
+    height: 1.5rem !important;
+}
+
+.files-handling {
+    display: flex;
+    flex-direction: row;
+    /* background-color: #646464; */
+    padding: 0rem 1.1rem;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d4d4d469;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+input[type=text] {
+    color: var(--text-color);
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #dcdada;
+    border-radius: 4px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    height: 0.3rem;
+    background-color: var(--bg);
+    cursor: pointer;
+    transition: filter var(--speed);
+}
+
+input[type=text]:focus {
+    /* border-radius: var(--border-radius); */
+    border: var(--border);
+}
+
+input[type=text]:hover {
+    filter: brightness(1.3);
+}
+
+form>button {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    color: var(--bg-accent);
+    background-color: var(--bg);
+    cursor: pointer;
+    transition: filter var(--speed);
+}
+
+form>button:hover {
+    filter: brightness(1.3);
+}
+
+/* #filename {
+    background-color: transparent;
+    border: 1px solid transparent;
+    opacity: 0.5;
+    height: 100%;
+    width: 100px;
+} */
+
+.file-heading {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    /* border: 2px solid var(--text-color); */
+    padding-left: 0.3rem;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fileitem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 0.8rem;
+    border-bottom: var(--border);
+    color: var(--text-color);
+    transition: filter 200ms;
+}
+
+.fileitem>.delete-icon {
+    cursor: pointer;
+}
+
+.fileitem>.delete-icon:hover {
+    color: red;
+    transition: color 200ms;
+}
+
+.fileitem .folder-icon {
+    color: #02064f;
+    transition: color 100ms;
+}
+
+.fileitemtext {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    height: 2rem;
+    color: var(--text-color);
+    /* font-size: 1rem; */
+    padding: 0rem 0.5rem;
+
+}
+
+.file-detail {
+    font-size: 0.8rem;
+}
+
+.fileitem:hover {
+    filter: brightness(2);
+}

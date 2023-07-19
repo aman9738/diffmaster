@@ -6,6 +6,7 @@ import { ReactComponent as CaretIcon } from './icons/caret.svg';
 import { ReactComponent as PlusIcon } from './icons/plus.svg';
 import { ReactComponent as CogIcon } from './icons/cog.svg';
 import { ReactComponent as ChevronIcon } from './icons/chevron.svg';
+import DifferenceIcon from '@mui/icons-material/Difference';
 // import { ReactComponent as ArrowIcon } from './icons/arrow.svg';
 // import { ReactComponent as BoltIcon } from './icons/bolt.svg';
 
@@ -13,7 +14,7 @@ import { CSSTransition } from 'react-transition-group';
 
 function Header() {
     return (
-        <div className="App">
+        <div className="header">
             <Navbar>
                 <NavItem icon={<PlusIcon />} />
                 <NavItem icon={<BellIcon />} />
@@ -68,6 +69,10 @@ function DropdownMenu() {
 function Navbar(props) {
     return (
         <nav className='navbar'>
+            <div className="logo">
+                <DifferenceIcon />
+                <h1>diffmaster</h1>
+            </div>
             <ul className='navbar-nav'>{props.children}</ul>
         </nav>
     )
