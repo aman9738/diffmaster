@@ -54,12 +54,12 @@ function DropdownMenu() {
                 <div className="menu">
                     <DropdownItem leftIcon={<CogIcon />} rightIcon={<ChevronIcon />} goToMenu="main">main</DropdownItem>
                     <DropdownItem leftIcon={<CogIcon />} rightIcon={<ChevronIcon />}>Aman</DropdownItem>
+                    {/* <DropdownItem leftIcon={<CogIcon />} rightIcon={<ChevronIcon />}>Setting</DropdownItem>
                     <DropdownItem leftIcon={<CogIcon />} rightIcon={<ChevronIcon />}>Setting</DropdownItem>
                     <DropdownItem leftIcon={<CogIcon />} rightIcon={<ChevronIcon />}>Setting</DropdownItem>
                     <DropdownItem leftIcon={<CogIcon />} rightIcon={<ChevronIcon />}>Setting</DropdownItem>
                     <DropdownItem leftIcon={<CogIcon />} rightIcon={<ChevronIcon />}>Setting</DropdownItem>
-                    <DropdownItem leftIcon={<CogIcon />} rightIcon={<ChevronIcon />}>Setting</DropdownItem>
-                    <DropdownItem leftIcon={<CogIcon />} rightIcon={<ChevronIcon />}>Setting</DropdownItem>
+                    <DropdownItem leftIcon={<CogIcon />} rightIcon={<ChevronIcon />}>Setting</DropdownItem> */}
                 </div>
             </CSSTransition>
         </div>
